@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const RecoveryPassword = () => {
+const Home = () => {
 	return (
 		<div>
             <h1>React Shop</h1>

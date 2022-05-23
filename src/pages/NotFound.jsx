@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const RecoveryPassword = () => {
+const NotFound = () => {
 	return (
 		<div>
-    Not Found, error 404.
+            Not Found, error 404.
         </div>
 	);
 }
