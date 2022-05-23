@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import '../styles/Header.scss';
 
 const Header = () => {
     return (
@@ -17,7 +18,7 @@ const Header = () => {
                     <a href="/">Electronics</a>
                 </li>
                 <li>
-                    <a href="/">Furnitures</a>
+                    <a href="/">Furniture</a>
                 </li>
                 <li>
                     <a href="/">Toys</a>
