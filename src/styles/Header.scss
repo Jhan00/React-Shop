@@ -6,17 +6,15 @@ nav {
 }
 .menu {
   display: none;
-  width: 50px;
-  height: 50px;
 }
-.logo {
+.nav-logo {
   width: 100px;
 }
 .navbar-left ul,
 .navbar-right ul {
   list-style: none;
   padding: 0;
-  margin-top: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   height: 60px;
@@ -54,6 +52,7 @@ nav {
 .navbar-shopping-cart img {
   width: 20px;
   height: 20px;
+  border-radius: 50%;
 }
 .navbar-shopping-cart {
   position: relative;
@@ -67,7 +66,7 @@ nav {
   font-weight: bold;
   position: absolute;
   top: -6px;
-  right: -10px;
+  right: -12px;
   display: flex;
   justify-content: center;
   align-items: center;
