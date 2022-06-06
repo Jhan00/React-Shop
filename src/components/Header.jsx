@@ -1,11 +1,11 @@
 import React, { useState, useContext } from 'react';
 import '@styles/Header.scss';
 import Menu from '@components/Menu';
-import MyOrder from '../containers/MyOrder';
-import AppContext from '../context/AppContext';
-import menu from '@icons/menu-bar.png';
-import logo from '@logo/main-logo.jpeg';
-import shoppingCart from '@icons/cart.png';
+import MyOrder from '@containers/MyOrder';
+import menu from '@icons/icon_menu.svg';
+import logo from '@logos/logo_yard_sale.svg';
+import AppContext from '@context/AppContext';
+import shoppingCart from '@icons/icon_shopping_cart.svg';
 
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
 						<a href="/">Electronics</a>
 					</li>
 					<li>
-						<a href="/">Furniture</a>
+						<a href="/">Furnitures</a>
 					</li>
 					<li>
 						<a href="/">Toys</a>
@@ -44,19 +44,20 @@ const Header = () => {
 			</div>
 			<div className="navbar-right">
 				<ul>
-					<li className="navbar-email">
+					<li className="navbar-email" onClick={handleToggle}>
 						platzi@example.com
 					</li>
-					<li className="navbar-shopping-cart" 
+					<li
+						className="navbar-shopping-cart"
 						onClick={() => setToggleOrders(!toggleOrders)}
 					>
-						<img src={shoppingCart} alt="shopping cart" onClick={handleToggle} />
-						{state.cart.length > 0 ? <div>{state.cart.length}</div> : null }
+						<img src={shoppingCart} alt="shopping cart" />
+						{state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
 					</li>
 				</ul>
 			</div>
 			{toggle && <Menu />}
-			{toggle && <MyOrder />}
+			{toggleOrders && <MyOrder />}
 		</nav>
 	);
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import '@styles/Order.scss';
-import arrow from '@icons/arrow.png';
 
 const Order = () => {
 	return (
@@ -10,7 +9,7 @@ const Order = () => {
 				<span>6 articles</span>
 			</p>
 			<p>$560.00</p>
-			<img src={arrow} alt="arrow" />
+			<img src="./icons/arrow.png" alt="arrow" />
 		</div>
 	);
 }

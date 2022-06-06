@@ -1,11 +1,10 @@
 import React from 'react';
 
-
 const NotFound = () => {
 	return (
 		<div>
-            Not Found, error 404.
-        </div>
+			Not Found, error 404.
+		</div>
 	);
 }
 
